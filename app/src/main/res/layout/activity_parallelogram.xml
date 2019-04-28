@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:weightSum="2"
+    tools:context=".MainActivity"
+    android:id="@+id/MainLayout"
+    android:orientation="vertical">
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+    <com.parallelogram.custom.MyProgressBar
+        app:completeColor="@color/colorAccent"
+        app:waitingColor="@color/colorPrimaryDark"
+        app:noOfSteps="5"
+        android:id="@+id/step_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?android:selectableItemBackground"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_weight="0.5"
+            android:layout_margin="5dp"
+            android:id="@+id/btnahead"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Ahead"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
+
+        <Button
+            android:layout_weight="0.5"
+            android:layout_margin="5dp"
+            android:id="@+id/btnback"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
+    </LinearLayout>                                           
+</LinearLayout>
